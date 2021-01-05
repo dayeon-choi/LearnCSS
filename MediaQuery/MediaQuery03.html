@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 쿼리 연습</title>
+    <style>
+        #grid{
+            border: 5px solid pink;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        div{
+            border: 5px solid gray;
+        }
+        @media(max-width: 800px){
+            #grid{
+                border: 5px solid pink;
+                display: grid;
+                grid-template-columns: 1fr 5fr;
+            }
+            #navigation{
+                font-size: smaller;
+                color: gray;
+            }
+            div{
+                border: 5px solid white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div id="navigation">NAVIGATION</div>
+        <div>Lorem ipsum dolor sit amet, 
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+    </div>
+</body>
+</html>
